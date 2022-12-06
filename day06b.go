@@ -10,7 +10,7 @@ func main() {
 	// open file
 	f, _ := os.ReadFile("day06.txt")
 
-	// slice to hold file data
+	// var to hold file data
 	signal := string(f)
 
 	var firstMarker int
@@ -21,9 +21,6 @@ func main() {
 		}
 		if len(markers) == 14 {
 			firstMarker = i + 14
-			break
-		}
-		if firstMarker != 0 {
 			break
 		}
 	}
